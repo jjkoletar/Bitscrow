@@ -7,8 +7,8 @@
     <body>
         <?php
         require_once 'inc/Bitscrow.php';
-        $Bitscrow = new Bitscrow();
-        print_r($Bitscrow);
+        $bitscrow = new Bitscrow();
+        print_r($bitscrow);
         ?>
     </body>
 </html>
