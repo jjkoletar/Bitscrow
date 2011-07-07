@@ -11,6 +11,10 @@ $config['dbuser'] = 'bar';
 $config['dbpass'] = 'foobar';
 $config['dbprefix'] = 'bitscrow_';
 
+$config['rpcuser'] = 'test';
+$config['rpcpassword'] = 'lolpassword';
+$config['rpcport'] = 8332;
+$config['rpchost'] = 'localhost';
 
 
 
