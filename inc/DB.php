@@ -18,6 +18,16 @@ class DB {
         mysql_close($this->$_con);
         
     }
+    public function query($sql)
+    {
+        $query = mysql_query($sql, $_con);
+        if (!$query)
+        {
+            throw new Exception('Query Error:' . mysql_error());
+        }
+        
+        
+    }
 }
 
 ?>

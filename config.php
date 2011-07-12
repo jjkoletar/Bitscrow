@@ -6,8 +6,8 @@
  */
 
 $config['dbhost'] = 'localhost';
-$config['dbname'] = 'foo';
-$config['dbuser'] = 'bar';
+$config['dbname'] = 'toonbook_bitscrow';
+$config['dbuser'] = 'toonbook_bitscro';
 $config['dbpass'] = 'foobar';
 $config['dbprefix'] = 'bitscrow_';
 
