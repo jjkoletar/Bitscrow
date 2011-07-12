@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 
-$config['dbhost'] = 'localhost';
+$config['dbhost'] = 'direct-connect.toonbook.me';
 $config['dbname'] = 'toonbook_bitscrow';
 $config['dbuser'] = 'toonbook_bitscro';
 $config['dbpass'] = 'foobar';

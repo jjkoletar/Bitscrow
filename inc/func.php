@@ -8,7 +8,7 @@ function rpcConnect() {
 }
 
 function configCheck() {
-    if(!isSet($config['dbhost']) || !isSet($config['dbname']) || !isSet($config['dbuser']) || !isSet($config['dbpass']) || !isSet($config['dbprefix']) || !isSet($config['rpcuser']) || !isSet($config['rpcpassword']) || !isSet($config['rpcport']) || !isSet($config['rpchost'])) {
+    if(!isset($config['dbname']) || !isset($config['dbuser']) || !isset($config['dbpass']) || !isset($config['dbprefix']) || !isset($config['dbhost']) || !isSet($config['rpcuser']) || !isSet($config['rpcpassword']) || !isSet($config['rpcport']) || !isSet($config['rpchost'])) {
         return false;
     }
     else {
