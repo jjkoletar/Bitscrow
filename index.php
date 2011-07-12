@@ -8,6 +8,7 @@
         <?php
         require_once 'inc/Bitscrow.php';
         $bitscrow = new Bitscrow();
+        print_r($bitscrow->db->query("SELECT * FROM bitscrow_foo"));
         print_r($bitscrow);
         ?>
     </body>
