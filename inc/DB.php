@@ -10,17 +10,17 @@ class DB {
     
     public function __construct($cfg) {
         //Test connection to DB
-        $this->$_con = mysql_connect($cfg['dbhost'], $cfg['dbuser'], $cfg['dbpass']);
-        if ($this->$_con)
+        $this->_con = mysql_connect($cfg['dbhost'], $cfg['dbuser'], $cfg['dbpass']);
+        if (!$this->_con)
         {
-            throw new exception('Could not connect to DB: ' . mysql_error($this->$_con));
+            throw new exception('Could not connect to DB: ' . mysql_error($this->_con));
         }
-        mysql_close($this->$_con);
+        mysql_close($this->_con);
         
     }
     public function query($sql)
     {
-        $query = mysql_query($sql, $_con);
+        $query = mysql_query($sql, $this->_con);
         if (!$query)
         {
             throw new Exception('Query Error:' . mysql_error());

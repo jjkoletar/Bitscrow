@@ -20,7 +20,7 @@ class Bitscrow {
         
         //Create connector to MySQL db
         require_once 'inc/DB.php';
-        $this->$db = new DB($config);
+        $this->db = new DB($config);
     }
 }
 

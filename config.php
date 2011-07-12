@@ -5,10 +5,10 @@
  * and open the template in the editor.
  */
 
-$config['dbhost'] = 'direct-connect.toonbook.me';
-$config['dbname'] = 'toonbook_bitscrow';
-$config['dbuser'] = 'toonbook_bitscro';
-$config['dbpass'] = 'foobar';
+$config['dbhost'] = 'localhost';
+$config['dbname'] = 'bitscrow';
+$config['dbuser'] = 'root';
+$config['dbpass'] = 'root';
 $config['dbprefix'] = 'bitscrow_';
 
 
