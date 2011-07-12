@@ -13,7 +13,7 @@ class Bitscrow {
         require_once 'config.php';
         require_once 'func.php';
         //Double check all required variables are in config.php
-        if (!configCheck())
+        if (!configCheck($config))
         {
             throw new exception('Some config items are missing.');
         }
