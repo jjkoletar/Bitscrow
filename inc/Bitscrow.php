@@ -11,8 +11,9 @@ class Bitscrow {
     function __construct() {
         //Load config
         require_once 'config.php';
+        require_once 'func.php';
         //Double check all required variables are in config.php
-        if (!isset($config['dbname']) || !isset($config['dbuser']) || !isset($config['dbpass']) || !isset($config['dbprefix']) || !isset($config['dbhost']))
+        if (!configCheck())
         {
             throw new exception('Some config items are missing.');
         }
